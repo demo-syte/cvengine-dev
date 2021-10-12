@@ -1,4 +1,4 @@
-
+/*
 variable "AMIS" {
   type = map(any)
   default = {
@@ -98,4 +98,4 @@ variable "privatesubnet2" {
 variable "privatesubnet3" {
 
   default = "172.0.13.0/24"
-}
+}*/
