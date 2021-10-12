@@ -15,10 +15,10 @@ backend "s3" {
     acl            = "private"
     dynamodb_table = "dev-cvengine-lock-dynamo"
 
-    organization = "dev-cvengine"
+    organization = "cvengine-dev"
 
     workspaces {
-      name = "dev-cvengine"
+      name = "cvengine-dev"
     }
   }
 }
