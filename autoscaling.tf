@@ -1,6 +1,6 @@
 # Application Load balancer on port TCP 80/443
 
-/*resource "aws_elb" "devcvengine-elb" {
+resource "aws_elb" "devcvengine-elb" {
   name            = "dev-cvengine-elb"
   subnets         = [module.vpc.public_subnets[0], module.vpc.public_subnets[1]]
   security_groups = [aws_security_group.elb-securitygroup.id]
@@ -33,7 +33,7 @@ lb_protocol = "tcp"
     Project     = "dev-cvengine"
   }
 
-}*/
+}
 #access_logs = {
 # bucket = "elb-access-logs-bucket"
 # }
