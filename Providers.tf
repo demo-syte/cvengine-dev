@@ -8,12 +8,12 @@ terraform {
 
     }
   }
-backend "s3" {
-    bucket         = "dev-cvengine-bucket"
-    key            = "dev/terraform.tfstate"
-    region         = "us-west-2"
-    acl            = "private"
-    dynamodb_table = "dev-cvengine-lock-dynamo"
+backend "remote" {
+    #bucket         = "dev-cvengine-bucket"
+    #key            = "dev/terraform.tfstate"
+    #region         = "us-west-2"
+    #acl            = "private"
+    #dynamodb_table = "dev-cvengine-lock-dynamo"
 
     organization = "dev-cvengine"
 
