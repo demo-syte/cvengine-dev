@@ -35,7 +35,7 @@ variable "MYIP" {
   default = "202.184.189.154/32"
 }
 
-variable "rmquser" {
+/*variable "rmquser" {
   default = "rabbit"
 }
 
@@ -59,7 +59,7 @@ variable "dbpass" {
 variable "instance_count" {
   default = "1"
 }
-
+*/
 
 variable "vpc_name" {
   default = "dev-cvengine-vpc"
